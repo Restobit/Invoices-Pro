@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAEQ,QAFA,CACJ,gBAAgB,CACZ,QAAQ,CAAC;EACR,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,aAAa;EAC9B,UAAU,EAAE,MAAM;CAKlB;;AAVT,AAOa,QAPL,CACJ,gBAAgB,CACZ,QAAQ,CAKH,CAAC,CAAA;EACG,MAAM,EAAE,GAAG;CACd",
+    "sources": [
+        "invoice-list.component.scss"
+    ],
+    "names": [],
+    "file": "invoice-list.component.css"
+}

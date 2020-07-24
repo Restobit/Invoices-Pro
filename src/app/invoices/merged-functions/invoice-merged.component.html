@@ -1,0 +1,5 @@
+
+ <div class="invoice-create-continer">
+    <app-invoice-create (invoiceCreated)="onInvoicesAdded($event)"></app-invoice-create>
+    <app-invoice-list [invoices]="storedInvoices"></app-invoice-list>
+ </div>

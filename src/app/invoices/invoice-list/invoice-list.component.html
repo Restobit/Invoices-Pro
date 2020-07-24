@@ -1,0 +1,13 @@
+<mat-card *ngIf="invoices.length > 0">
+    <mat-card-content *ngFor="let invoice of invoices">
+        <mat-card>
+        <p>{{invoice.id}}</p>
+        <p>{{ invoice.name }}</p>
+        <p>{{ invoice.moneyValue }}</p>
+        <p>{{ invoice.moneyType }}</p>
+        <p>{{ invoice.status }}</p>
+        </mat-card>
+    </mat-card-content>
+  </mat-card>
+  
+  

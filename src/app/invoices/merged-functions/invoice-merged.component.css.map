@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,wBAAwB,CAAA;EACpB,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,YAAY;CAGhC;;AAED,AAAA,gBAAgB,CAAA;EACZ,OAAO,EAAE,IAAI;EACb,UAAU,EAAE,GAAG;EACf,YAAY,EAAE,GAAG;EACjB,eAAe,EAAE,MAAM;CAE1B",
+    "sources": [
+        "invoice-merged.component.scss"
+    ],
+    "names": [],
+    "file": "invoice-merged.component.css"
+}

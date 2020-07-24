@@ -1,0 +1,64 @@
+
+
+<mat-card>
+    <form (submit)="onAddInvoice(invoiceForm)" #invoiceForm="ngForm">
+      <mat-form-field>
+        <input
+          matInput
+          type="text"
+          name="invoiceName"
+          ngModel
+          placeholder="Name"
+          required
+          minlength="5"
+          maxlength="25"
+          #invoicename="ngModel">
+        <mat-error *ngIf="invoicename.invalid">Please enter a invoice name.</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input
+          matInput
+          type="number"
+          name="moneyValue"
+          placeholder="Price"
+          ngModel
+          required
+          min="0"
+          step="1"
+          #moneyValue="ngModel">
+        <mat-error *ngIf="moneyValue.invalid">Please enter the invoice value.</mat-error>
+      </mat-form-field>
+      
+      <mat-form-field appearance="fill">
+        <mat-label>Money type</mat-label>
+        <mat-select [(ngModel)]="selectedMoneyType" name="moneyType">
+          <mat-option *ngFor="let moneyType of moneyTypes" [value]="moneyType.value">
+            {{moneyType.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+       
+        <label id="example-radio-group-label">Pick the status</label>
+        <mat-radio-group
+            aria-labelledby="example-radio-group-label"
+            class="example-radio-group"
+            [(ngModel)]="selectedStatus" name="status">
+            <mat-radio-button class="example-radio-button" *ngFor="let status of statuses" [value]="status">
+                {{status}}
+            </mat-radio-button>
+        </mat-radio-group>
+
+        <div class="form-buttons">
+            <button mat-raised-button color="primary"
+            type="submit">Save Invoice</button>
+    
+           <button mat-raised-button color="accent"type="reset"
+            (click)="resetFormData()"> Reset </button>
+        </div>
+      
+
+    </form>
+  </mat-card>
+ 
+
+  
