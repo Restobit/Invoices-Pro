@@ -1,9 +1,9 @@
 app-invoice-create {
-  width: 50%;
+  grid-area: invoices-form;
 }
 
 mat-card {
-  margin-top: 2em;
+  width: 80%;
 }
 
 mat-card form {
@@ -12,11 +12,11 @@ mat-card form {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 mat-card form mat-form-field {
@@ -24,16 +24,22 @@ mat-card form mat-form-field {
 }
 
 mat-card form mat-radio-group {
-  width: 100%;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 2em;
+  justify-content: space-around;
+  padding-top: 2em;
+  padding-bottom: 1em;
+}
+
+mat-card form mat-error {
+  margin: 1em 0 1em 0;
 }
 
 mat-card form .form-buttons button:nth-child(even) {
   margin-left: 2em;
 }
+
 /*# sourceMappingURL=invoice-create.component.css.map */

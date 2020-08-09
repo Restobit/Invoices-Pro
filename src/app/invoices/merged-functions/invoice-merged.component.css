@@ -1,17 +1,21 @@
 .invoice-create-continer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  margin-top: 2em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (45%)[2];
+      grid-template-columns: repeat(2, 45%);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+      grid-template-areas: "invoices-content invoices-form";
 }
 
 app-invoice-list {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: invoices-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 2em;
-  margin-right: 2em;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

@@ -1,10 +1,9 @@
 
-
-<mat-card class="primary" *ngFor="let module of modules" [routerLink]="module.route">
-    <mat-card-content >
-      <p>{{ module.content }}</p>
-    </mat-card-content>
-  <p class="info-text mat-body-1" *ngIf="modules.length <= 0">No modules added yet!</p>
-</mat-card>
- 
-    
+<div class="home-modules-container">
+  <div class="home-modules-content" >
+        <mat-card color="primary" *ngFor="let module of modules" [routerLink]="module.route">
+          <p>{{ module.content }}</p>
+          <p class="info-text mat-body-1" *ngIf="modules.length <= 0">No modules added yet!</p>
+        </mat-card>
+  </div>
+</div>

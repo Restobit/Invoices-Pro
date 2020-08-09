@@ -1,3 +1,7 @@
+mat-card {
+  grid-area: invoices-content;
+}
+
 mat-card mat-card-content mat-card {
   display: -webkit-box;
   display: -ms-flexbox;

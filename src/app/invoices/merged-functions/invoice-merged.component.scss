@@ -1,14 +1,14 @@
 .invoice-create-continer{
-    display: flex;
-    justify-content: space-around;
-
-   
-}
-
-app-invoice-list{
-    display: flex;
     margin-top: 2em;
-    margin-right: 2em;
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    grid-template-rows: auto;
+    grid-template-areas: "invoices-content invoices-form";
+
+}
+app-invoice-list{
+    grid-area: invoices-content;
+    display: flex;
     justify-content: center;
     
 }
